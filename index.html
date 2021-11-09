@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="app">
-        <h1 v-for="usermail in email">{{usermail}}</h1>
+        <h1 v-for="usermail in email" v-if="email.length == 10">{{usermail}}</h1>
     </div>
     <!-- Disable in production -->
     <script src='https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js'></script>
